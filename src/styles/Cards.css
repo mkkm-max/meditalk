@@ -1,0 +1,139 @@
+/* shared card styles for DoctorCard, StudyCard, TopicCard and FeatureCard */
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* ---------- Doctor card ---------- */
+.doctorCard {
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+}
+
+.doctorCard h3 {
+  color: var(--main-dark);
+  font-size: 1.05rem;
+}
+
+.doctorCard .speciality {
+  color: var(--main);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.doctorCard .info {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Study card ---------- */
+.studyCard {
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+}
+
+.studyCard .studyCategory {
+  display: block;
+  color: var(--main);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.studyCard h3 {
+  color: var(--main-dark);
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.studyCard .studySummary {
+  color: #444;
+  font-size: 0.92rem;
+  margin-bottom: 12px;
+}
+
+.studyCard .studyMeta {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* ---------- Topic card ---------- */
+.topicCard {
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px;
+  margin-bottom: 14px;
+}
+
+.topicCard h3 {
+  color: var(--main-dark);
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.topicCard .topicText {
+  color: #444;
+  font-size: 0.92rem;
+  margin-bottom: 10px;
+}
+
+.topicCard .topicFooter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.85rem;
+}
+
+.topicCard .topicAuthor {
+  font-weight: 600;
+}
+
+.topicCard .topicReplies {
+  color: var(--muted);
+  margin-left: auto;
+}
+
+/* ---------- Feature card ---------- */
+.featureCard {
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  display: block;
+}
+
+.featureCard:hover {
+  border-color: var(--main);
+}
+
+.featureCard h3 {
+  color: var(--main-dark);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.featureCard p {
+  color: #444;
+  font-size: 0.92rem;
+  margin-bottom: 10px;
+}
+
+.featureCard .featureFor {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.featureCard .featureLink {
+  margin-top: 12px;
+  color: var(--main);
+  font-weight: 600;
+  font-size: 0.9rem;
+}

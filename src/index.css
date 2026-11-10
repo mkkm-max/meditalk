@@ -1,0 +1,115 @@
+:root {
+  --main: #1565c0;
+  --main-dark: #0d3c7a;
+  --light: #e8f1fb;
+  --bg: #f4f6f8;
+  --text: #222;
+  --muted: #666;
+  --border: #cfd6dd;
+  --container: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* shared page layout */
+.page {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+.page h1 {
+  color: var(--main-dark);
+  font-size: 1.9rem;
+  margin-bottom: 6px;
+}
+
+.page .subtitle {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+/* shared button */
+.btn {
+  display: inline-block;
+  background-color: var(--main);
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--main-dark);
+}
+
+/* shared role label (doctor / patient) */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+}
+
+.badge.doctor {
+  color: var(--main);
+  border-color: var(--main);
+}
+
+.badge.patient {
+  color: var(--muted);
+}
+
+/* very big screens: a wider container and slightly bigger text */
+@media only screen and (min-width: 1600px) {
+  :root {
+    --container: 1300px;
+  }
+
+  html {
+    font-size: 112.5%;
+  }
+}
+
+/* small phones */
+@media only screen and (max-width: 480px) {
+  .page {
+    padding: 28px 16px 40px;
+  }
+
+  .page h1 {
+    font-size: 1.6rem;
+  }
+}

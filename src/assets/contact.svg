@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+  <rect width="600" height="800" fill="#1565c0"/>
+  <path d="M130 250h340a30 30 0 0 1 30 30v190a30 30 0 0 1-30 30H330l-90 80v-80h-110a30 30 0 0 1-30-30V280a30 30 0 0 1 30-30z" fill="#ffffff"/>
+  <rect x="285" y="300" width="30" height="130" rx="4" fill="#1565c0"/>
+  <rect x="235" y="350" width="130" height="30" rx="4" fill="#1565c0"/>
+</svg>

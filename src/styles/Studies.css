@@ -1,0 +1,46 @@
+/* horizontal category tabs */
+.tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 22px;
+}
+
+.tab {
+  background-color: #fff;
+  border: 1px solid var(--border);
+  color: var(--main-dark);
+  padding: 7px 14px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background-color: var(--light);
+}
+
+.tab.active {
+  background-color: var(--main);
+  border-color: var(--main);
+  color: #fff;
+}
+
+.roleNote {
+  background-color: #fff8e1;
+  border: 1px solid #e6d9a2;
+  color: #5c4b00;
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin-bottom: 22px;
+  font-size: 0.92rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .tab {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}
